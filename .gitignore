@@ -7,4 +7,5 @@ venv/
 .ipynb_checkpoints/
 
 dataset/
+archive.zip
 model/*.pkl
