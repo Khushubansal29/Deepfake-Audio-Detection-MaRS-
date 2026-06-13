@@ -9,4 +9,3 @@ venv/
 dataset/
 archive.zip
 temp.wav
-model/*.pkl
