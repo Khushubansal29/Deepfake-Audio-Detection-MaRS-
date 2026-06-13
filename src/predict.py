@@ -17,8 +17,9 @@ def predict_audio(file_path):
     features = extract_features(file_path)
 
     prediction = model.predict([features])[0]
+    confidence = max(model.predict_proba([features])[0])
 
     if prediction == 0:
-        return "FAKE"
+        return "FAKE", confidence
     else:
-        return "REAL"
+        return "REAL", confidence

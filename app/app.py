@@ -2,10 +2,8 @@ import streamlit as st
 import os
 import sys
 
-CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
-SRC_DIR = os.path.join(os.path.dirname(CURRENT_DIR), "src")
-
-sys.path.append(SRC_DIR)
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(os.path.join(ROOT, "src"))
 
 from predict import predict_audio
 
@@ -15,12 +13,33 @@ st.set_page_config(
     layout="centered"
 )
 
+# Sidebar
+st.sidebar.title("About")
+
+st.sidebar.write("""
+### Model Information
+
+**Algorithm:** Random Forest
+
+**Audio Features Used:**
+- MFCC (13 coefficients)
+- Zero Crossing Rate
+- Spectral Centroid
+- RMS Energy
+
+**Test Accuracy:** 93%
+""")
+
+# Main Page
 st.title("🎙️ Deepfake Audio Detection")
 
-st.write(
+st.metric("Model Accuracy", "93%")
+
+st.info(
     """
-    Upload a WAV audio file and the model will predict whether
-    the speech is REAL or AI-GENERATED.
+    Upload a WAV audio file and the model will analyze
+    speech characteristics to determine whether the audio
+    is human-generated or AI-generated.
     """
 )
 
@@ -31,7 +50,6 @@ uploaded_file = st.file_uploader(
 
 if uploaded_file is not None:
 
-    # Save uploaded file temporarily
     temp_path = "temp.wav"
 
     with open(temp_path, "wb") as f:
@@ -40,14 +58,28 @@ if uploaded_file is not None:
     st.audio(temp_path)
 
     try:
-        result = predict_audio(temp_path)
+
+        result, confidence = predict_audio(temp_path)
 
         st.subheader("Prediction Result")
 
         if result == "REAL":
             st.success("✅ REAL AUDIO")
         else:
-            st.error("🚨 FAKE AUDIO")
+            st.error("🚨 AI GENERATED AUDIO")
+
+        st.progress(float(confidence))
+
+        st.metric(
+            "Confidence Score",
+            f"{confidence * 100:.2f}%"
+        )
 
     except Exception as e:
         st.error(f"Error: {e}")
+
+st.markdown("---")
+
+st.caption(
+    "Built by Khushboo | IIT Roorkee | Deepfake Audio Detection System"
+)
