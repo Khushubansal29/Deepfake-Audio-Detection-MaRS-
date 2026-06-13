@@ -1,5 +1,5 @@
 import joblib
-from src.feature_extraction import extract_features
+from feature_extraction import extract_features
 
 model = joblib.load("../model/random_forest_model.pkl")
 
