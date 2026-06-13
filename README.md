@@ -1,6 +1,6 @@
 # Deepfake Audio Detection
 
-A machine learning system for detecting AI-generated speech using audio feature extraction and classification techniques.
+A machine learning system for detecting AI-generated speech from human speech using audio feature extraction and classification techniques.
 
 ## Project Workflow
 
