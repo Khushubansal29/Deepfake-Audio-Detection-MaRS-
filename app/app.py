@@ -13,7 +13,6 @@ st.set_page_config(
     layout="centered"
 )
 
-# Sidebar
 st.sidebar.title("About")
 
 st.sidebar.write("""
@@ -30,7 +29,6 @@ st.sidebar.write("""
 **Test Accuracy:** 93%
 """)
 
-# Main Page
 st.title("🎙️ Deepfake Audio Detection")
 
 st.metric("Model Accuracy", "93%")
