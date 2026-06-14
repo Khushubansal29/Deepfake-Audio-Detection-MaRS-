@@ -4,7 +4,7 @@
 Detect AI-Generated Speech using Machine Learning and Audio Signal Processing
 </p>
 
-<p align="center">
+<!-- <p align="center">
 
 <img src="https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python"/>
 <img src="https://img.shields.io/badge/Scikit--Learn-RandomForest-orange?style=for-the-badge&logo=scikitlearn"/>
@@ -13,35 +13,35 @@ Detect AI-Generated Speech using Machine Learning and Audio Signal Processing
 
 </p>
 
-<p align="center">
+<p align="center"> -->
 
 <a href="https://deepfake-audio-detection01.streamlit.app/">
-🚀 Live Demo
+Live Demo
 </a>
 
 • <a href="https://github.com/Khushubansal29/Deepfake-Audio-Detection-MaRS">
-📂 Repository </a>
+Repository </a>
 
 </p>
 
 ---
 
-## 📖 Overview
+## Overview
 
 With the rapid advancement of AI voice synthesis technologies, distinguishing between real and synthetic speech has become increasingly important.
 
 This project uses machine learning and audio signal processing techniques to classify speech recordings as:
 
-* ✅ Real Human Speech
-* 🚨 AI-Generated Speech
+* Real Human Speech
+* AI-Generated Speech
 
 The system extracts acoustic features from audio recordings and uses a Random Forest classifier to perform detection in real time through an interactive Streamlit web application.
 
 ---
 
-## 🎯 Live Demo
+## Live Demo
 
-👉 https://deepfake-audio-detection01.streamlit.app/
+https://deepfake-audio-detection01.streamlit.app/
 
 ---
 
@@ -49,7 +49,7 @@ The system extracts acoustic features from audio recordings and uses a Random Fo
 
 ### Homepage
 
-*Add a screenshot here*
+![Homepage](image.png)
 
 ```markdown
 ![Homepage](images/homepage.png)
@@ -57,7 +57,7 @@ The system extracts acoustic features from audio recordings and uses a Random Fo
 
 ### Prediction Result
 
-*Add a screenshot here*
+![Prediction](image-1.png)
 
 ```markdown
 ![Prediction](images/prediction.png)
@@ -69,18 +69,18 @@ The system extracts acoustic features from audio recordings and uses a Random Fo
 
 ---
 
-## ✨ Features
+## Features
 
-* 🎵 Upload WAV audio files
-* 🤖 Detect AI-generated speech
-* 📊 Confidence score prediction
-* 📈 Model evaluation and confusion matrix
-* 🌐 Interactive Streamlit web application
-* ☁️ Cloud deployment
+* Upload WAV audio files
+* Detect AI-generated speech
+* Confidence score prediction
+* Model evaluation and confusion matrix
+* Interactive Streamlit web application
+* Cloud deployment
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Category         | Technologies   |
 | ---------------- | -------------- |
@@ -95,7 +95,7 @@ The system extracts acoustic features from audio recordings and uses a Random Fo
 
 ---
 
-## 🏗️ Project Architecture
+## Project Architecture
 
 ```text
 Audio File
@@ -114,7 +114,7 @@ Streamlit Web App
 
 ---
 
-## 🔊 Audio Features Used
+## Audio Features Used
 
 ### MFCC (Mel Frequency Cepstral Coefficients)
 
@@ -134,7 +134,7 @@ Captures average signal energy and loudness.
 
 ---
 
-## 📊 Feature Vector
+## Feature Vector
 
 | Feature            | Count  |
 | ------------------ | ------ |
@@ -146,7 +146,7 @@ Captures average signal energy and loudness.
 
 ---
 
-## 🤖 Model
+## Model
 
 ### Algorithm
 
@@ -163,7 +163,7 @@ RandomForestClassifier()
 
 ---
 
-## 📈 Performance
+## Performance
 
 ### Test Results
 
@@ -176,7 +176,7 @@ RandomForestClassifier()
 
 ---
 
-## 📉 Confusion Matrix
+## Confusion Matrix
 
 |             | Predicted Fake | Predicted Real |
 | ----------- | -------------- | -------------- |
@@ -185,7 +185,7 @@ RandomForestClassifier()
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 Deepfake-Audio-Detection-MaRS
@@ -214,7 +214,7 @@ Deepfake-Audio-Detection-MaRS
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 Clone the repository:
 
@@ -232,7 +232,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Run Locally
+## Run Locally
 
 ```bash
 streamlit run app/app.py
@@ -246,19 +246,7 @@ http://localhost:8501
 
 ---
 
-## 🚀 Future Improvements
-
-* Deep Learning based detection
-* CNN Spectrogram Classification
-* Wav2Vec2 Integration
-* Transformer Models
-* Multi-Class Audio Classification
-* MP3 / FLAC Support
-* Batch Uploads
-
----
-
-## 📚 Learning Outcomes
+## Learning Outcomes
 
 Through this project I gained hands-on experience in:
 
@@ -272,9 +260,9 @@ Through this project I gained hands-on experience in:
 
 ---
 
-## 👩‍💻 Author
+## Author
 
-**Khushboo Bansal**
+**Khushboo**
 
 B.Tech Chemical Engineering
 Indian Institute of Technology Roorkee
