@@ -4,26 +4,6 @@
 Detect AI-Generated Speech using Machine Learning and Audio Signal Processing
 </p>
 
-<!-- <p align="center">
-
-<img src="https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python"/>
-<img src="https://img.shields.io/badge/Scikit--Learn-RandomForest-orange?style=for-the-badge&logo=scikitlearn"/>
-<img src="https://img.shields.io/badge/Streamlit-Deployed-red?style=for-the-badge&logo=streamlit"/>
-<img src="https://img.shields.io/badge/Accuracy-93%25-success?style=for-the-badge"/>
-
-</p>
-
-<p align="center"> -->
-
-<a href="https://deepfake-audio-detection01.streamlit.app/">
-Live Demo
-</a>
-
-• <a href="https://github.com/Khushubansal29/Deepfake-Audio-Detection-MaRS">
-Repository </a>
-
-</p>
-
 ---
 
 ## Overview
@@ -45,27 +25,17 @@ https://deepfake-audio-detection01.streamlit.app/
 
 ---
 
-## 📸 Application Preview
+## Application Preview
 
 ### Homepage
 
 ![Homepage](image.png)
 
-```markdown
-![Homepage](images/homepage.png)
-```
-
 ### Prediction Result
 
 ![Prediction](image-1.png)
 
-```markdown
-![Prediction](images/prediction.png)
-```
-
-```markdown
-![Prediction](images/prediction2.png)
-```
+![Prediction](image-2.png)
 
 ---
 
@@ -264,13 +234,13 @@ Through this project I gained hands-on experience in:
 
 **Khushboo**
 
-B.Tech Chemical Engineering
-Indian Institute of Technology Roorkee
+B.Tech Chemical Engineering<br>
+Indian Institute of Technology Roorkee<br>
 
 GitHub: https://github.com/Khushubansal29
 
 ---
 
 <p align="center">
-⭐ If you found this project interesting, consider starring the repository!
+If you found this project interesting, consider starring the repository!
 </p>
